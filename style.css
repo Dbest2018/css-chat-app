@@ -1,14 +1,45 @@
 *,
 *::after,
 *::before {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  /* background */
+  --light-app-bg: hsl(270, 20%, 96%);
+  --light-magenta: hsl(293, 100%, 63%);
+  --light-violet: hsl(264, 100%, 61%);
+
+  /* text color */
+  --phone-subheading: hsl(276, 100%, 81%);
+  --phone-left-chat: hsl(276, 55%, 52%);
+  --phone-right-chat: hsl(271, 15%, 43%);
+  --phone-placeholder: hsl(206, 6%, 79%);
+  --desc-header: hsl(271, 36%, 24%);
+  --desc-main: hsl(270, 7%, 64%);
+
+  /* font size */
+  --fs-medium: 16px;
+}
+
+body {
+  background-color: var(--light-app-bg);
+  font-family: "Rubik", sans-serif;
+  font-size: var(--fs-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .banner {
   background-image: linear-gradient(
     to top left,
-    hsl(264, 100%, 61%),
-    hsl(293, 100%, 63%)
+    var(--light-violet),
+    var(--light-magenta)
   );
   width: 50%;
   height: 400px;
