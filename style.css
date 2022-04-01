@@ -22,6 +22,7 @@
 
   /* font size */
   --fs-medium: 16px;
+  --fs-large: 32px;
 }
 
 body {
@@ -239,6 +240,22 @@ body {
   color: white;
 }
 
+.description {
+  text-align: center;
+}
+.description__header {
+  color: var(--desc-header);
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: var(--fs-large);
+}
+.description__main {
+  color: var(--desc-main);
+  width: 70%;
+  margin: auto;
+  font-weight: normal;
+}
+
 @media screen and (min-width: 1000px) {
   body {
     display: flex;
@@ -246,15 +263,23 @@ body {
     justify-content: flex-start;
     padding-left: 20%;
   }
+
   .banner {
     width: 25%;
     height: 600px;
     border-radius: 0 0 1000px 1000px;
   }
+
   .phone {
     width: 250px;
   }
+
   .description {
     flex: 1;
+    margin: 0 5rem;
+    text-align: left;
+  }
+  .description__main {
+    width: 100%;
   }
 }
