@@ -8,9 +8,10 @@
 
 :root {
   /* background */
-  --light-app-bg: hsl(270, 20%, 96%);
+  --main-app-bg: hsl(270, 20%, 96%);
   --light-magenta: hsl(293, 100%, 63%);
   --light-violet: hsl(264, 100%, 61%);
+  --phone-bg: hsl(0, 0, 100%);
 
   /* text color */
   --phone-subheading: hsl(276, 100%, 81%);
@@ -49,6 +50,19 @@ body {
   left: 0;
   z-index: -1;
   border-radius: 0px 0px 1000px 0px;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  max-height: 100%;
+  height: 450px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--phone-bg);
+  margin-bottom: 40px;
+  border: 1px solid black;
 }
 
 @media screen and (min-width: 1000px) {
