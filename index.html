@@ -6,6 +6,10 @@
     <!-- displays site properly based on user's device -->
 
     <link
+    rel="stylesheet"
+    href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+  />
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -21,30 +25,83 @@
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="banner"></div>
-    <div class="phone"></div>
-    <div class="description">
-      <div class="description__header"></div>
-      <div class="description__main"></div>
-    </div>
+    <div class="phone">
+      <div class="phone-header">
+        <div class="phone-header-camera"></div>
+        <div class="phone-header-description">
+          <div class="phone-header-left">
+            <i class="uil uil-angle-left"></i>
+            <img src="images/avatar.jpg" alt="" />
+            <div class="profile-name">
+              <p class="name">Samuel Green</p>
+              <p class="availability">Available to Walk</p>
+            </div>
+          </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+          <i class="uil uil-ellipsis-v"></i>
+        </div>
+      </div>
+      <div class="phone-body">
+        <div class="message left">
+          <p>
+            That sounds great, I'd be <br />
+            happy to discuss more.
+          </p>
+        </div>
+        <div class="message left">
+          <p>
+            Could you send over some <br />
+            pictures of your dog please
+          </p>
+        </div>
+        <div class="pictures">
+          <img src="images/dog-image-1.jpg" alt="" />
+          <img src="images/dog-image-2.jpg" alt="" />
+          <img src="images/dog-image-3.jpg" alt="" />
+        </div>
+        <div class="message right">
+          <p>
+            Here are a few pictures. She's <br />
+            a happy girl!
+          </p>
+        </div>
+        <div class="message right">
+          <p>Can you make it?</p>
+        </div>
+        <div class="message left">
+          <p>
+            She looks so happy! The time <br />
+            we discussed works. How <br />
+            long shall I take her out for?
+          </p>
+        </div>
+        <div class="payment">
+          <div class="payment-left">
+            <i class="uil uil-circle"></i>
+            <p>30 minute walk</p>
+          </div>
+
+          <p class="amount">$29</p>
+        </div>
+        <div class="payment">
+          <div class="payment-left">
+            <i class="uil uil-circle"></i>
+            <p>1 hour walk</p>
+          </div>
+          <p class="amount">$49</p>
+        </div>
+        <div class="type-message">
+          <p>Type a message...</p>
+          <div class="send">
+            <i class="uil uil-angle-right"></i>
+          </div>
+        </div>
+      </div>
     </div>
+    </div>
+    
   </body>
 </html>
